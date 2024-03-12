@@ -10,8 +10,10 @@ const Blog = ({ blog, handleAddToBookmark, handleReadingTime }) => {
     author,
     posted_date,
     hashtags,
+    id
   } = blog;
   // console.log(blog);
+  // console.log(id);
   return (
     <section className="mb-20 space-y-4">
       <img
@@ -43,7 +45,7 @@ const Blog = ({ blog, handleAddToBookmark, handleReadingTime }) => {
         ))}
       </p>
       <button
-        onClick={() => handleReadingTime(reading_time)}
+        onClick={() => handleReadingTime(id,reading_time)}
         className="text-purple-800 font-bold underline"
       >
         Mark As Read
