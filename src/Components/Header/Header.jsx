@@ -1,3 +1,4 @@
+import profile from '../../assets/images/profile.png'
 const Header = () => {
   return (
     <div>
