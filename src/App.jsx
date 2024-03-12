@@ -12,7 +12,7 @@ const App = () =>{
     setBookmarks([...bookmarks,blog])
   }
   const handleReadingTime = time =>{
-    console.log("time");
+    setReadingTime(readingTime + time)
 
   }
 
@@ -24,7 +24,7 @@ const App = () =>{
           handleAddToBookmark={handleAddToBookmark}
           handleReadingTime={handleReadingTime}
         />
-        <Bookmarks bookmarks={bookmarks} />
+        <Bookmarks readingTime={readingTime} bookmarks={bookmarks} />
       </div>
     </div>
   );
